@@ -8,16 +8,15 @@ if (isset($_POST['frmContact'])) {
 
 $erreur = array();
 
+
 if ($nom === "")
 array_push($erreur, "veuillez saisir votre nom");
 
 if ($prenom === "")
 array_push($erreur, "veuillez saisir votre prenom");
 
-
 if ($mail === "")
 array_push($erreur, "veuillez saisir votre mail");
-
 
 if ($msg === "")
 array_push($erreur, "veuillez saisir votre message");
@@ -32,8 +31,6 @@ if (count($erreur) > 0) {
       $message .= '</li>';
   }
 
-
-
   $message .= '</ul>';
 
   echo $message;
@@ -42,13 +39,12 @@ if (count($erreur) > 0) {
 
 }
 
-
-
 else {
     echo "insertion en BDD";
 }
 
 }
 else {
+  $nom = $prenom = $mail = $msg = "";
   require 'frmContact.php';
 }
