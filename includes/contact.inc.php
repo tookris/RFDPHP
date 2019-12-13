@@ -25,7 +25,13 @@ if (isset($_POST['frmContact'])) {
     echo $message;
     require 'frmContact.php';
   }
+
   else {
+
+    $sqlVerif ="SELECT COUNT(*)FROM clients
+    WHERE mail='". $mail ."'";
+    $nbrOccurences = $pdo->query($sqlverif)->fetchColumn();
+
     $sql = "INSERT INTO clients
     (nom, prenom, mail, message)
     VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail ."', '" . $msg ."')";
