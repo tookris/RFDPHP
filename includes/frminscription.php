@@ -8,6 +8,6 @@
   <label for="pwd">mot de passe</label>
   <input type="password" name="pwd">
 </div>
-<input type="submit" value="inscription">
-<input type="hidden" name="frminscription">
+  <input type="submit" value="inscription">
+  <input type="hidden" name="frminscription">
 </form>
