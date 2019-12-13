@@ -1,5 +1,4 @@
 <form action="index.php?page=inscription" method="post">
-
 <div>
   <label for="email">e-mail</label>
   <input type="text" name="mail">

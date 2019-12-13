@@ -6,6 +6,7 @@
       <li><a href="index.php?page=sondage" title="Accéder au sondage du jour">Sondage</a></li>
       <li><a href="index.php?page=contact" title="Nous contacter">Contact</a></li>
       <li><a href="index.php?page=mentions" title="Les mentions légales">Mentions légales</a></li>
+      <li><a href="index.php?page=inscription" title="vous inscrivez">inscrit toi</a></li>
     </ul>
   </nav>
 </header>
